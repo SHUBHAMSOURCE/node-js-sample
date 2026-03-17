@@ -20,7 +20,7 @@ pipeline {
         stage('Test') {
             steps {
                 sh 'sleep 5'
-                sh 'curl http://localhost:5000'
+                sh 'curl http://node:5000'
             }
         }
     }
