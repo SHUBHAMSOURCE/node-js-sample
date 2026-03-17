@@ -19,9 +19,8 @@ pipeline {
 
         stage('Test') {
             steps {
-                sh 'sleep 5'
-                sh 'curl http://node:5000'
-            }
+                sh 'sleep 10'
+                  curl 'http://host.docker.internal:3002'            
         }
     }
 }
