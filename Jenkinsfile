@@ -18,8 +18,11 @@ pipeline {
         }
 
         stage('Test') {
-             steps {
+            steps {
                 sh 'sleep 10'
                 sh 'curl http://10.20.8.253:3002'
+            }
+        }
+
     }
 }
